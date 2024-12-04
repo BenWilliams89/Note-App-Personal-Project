@@ -10,3 +10,9 @@ createBtn.addEventListener('click',()=> { // when button is clicked it will run 
     img.src = 'assets/images/delete.png'; // where to get the image
     notesContainer.appendChild(inputBox).appendChild(img); // display input box inside the notes container then add the image of the delete
 })
+
+notesContainer.addEventListener('click', function(e) { // e is event object
+    if (e.target.tagName === 'IMG') { // e.target is the element that was clicked - IMG is the imgage which checked if the image was clicked
+        e.target.parentElement.remove(); // if the image was clciked - remove the paragragh text(the parent)
+    }
+})
