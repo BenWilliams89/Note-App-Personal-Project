@@ -60,3 +60,12 @@
     outline: none;
     border-radius: 5px;
 }
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px; /* This moves the image to the right hand side of the box*/
+    cursor: pointer;
+}
+
